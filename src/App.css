@@ -1,0 +1,260 @@
+body {
+  background: #1f1e1e;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  background: green;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+input, select, button {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input, select, button:not(.addButton){
+  width: 100%;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.meal-selection {
+  margin-top: 20px;
+}
+
+.meals-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.meals-column {
+  flex: 1 1 calc(50% - 10px);
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #333;
+  border-radius: 5px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.meals-column h3 {
+  margin-bottom: 10px;
+  color: #4CAF50;
+}
+
+.meals-column div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #444;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background 0.3s;
+}
+
+.meals-column div:hover {
+  background: #555;
+}
+
+.meals-column div span {
+  flex: 1;
+  color: #fff;
+  font-weight: bold;
+}
+
+.meals-column div button {
+  background: #4CAF50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.meals-column div button:hover {
+  background: #45a049;
+}
+
+.meal-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.meal-item {
+  background: #333;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.meal-item h3 {
+  color: #4CAF50;
+}
+
+.meal-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.meal-item li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.meal-item li button {
+  background: #f44336;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.meal-item li button:hover {
+  background: #e53935;
+}
+
+.alert {
+  padding: 10px;
+  background-color: #f44336;
+  color: white;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4CAF50;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f1e1e;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  background-color: #333;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #4CAF50;
+  border-top: 2px solid #4CAF50;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .meals-column {
+    flex: 1 1 100%;
+    margin-bottom: 15px;
+  }
+
+  input, select, button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .meals-column div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .meals-column div button {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .meals-column div {
+    padding: 8px;
+  }
+
+  .meal-item {
+    padding: 8px;
+  }
+
+  .meal-item li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .meal-item li button {
+    margin-top: 5px;
+  }
+}
