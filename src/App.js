@@ -11,9 +11,7 @@ function App() {
         HeApp
       </div>
       <div className='body'>
-        <Routes>
-          <Route path="/" exact element={<CalorieCalculator/>} />
-        </Routes>
+          <CalorieCalculator/>
       </div>
     </Router>
   );
