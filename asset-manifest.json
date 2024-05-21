@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/heapp/static/css/main.0d1f4d96.css",
+    "main.js": "/heapp/static/js/main.16007164.js",
+    "static/js/453.3042652e.chunk.js": "/heapp/static/js/453.3042652e.chunk.js",
+    "index.html": "/heapp/index.html",
+    "main.0d1f4d96.css.map": "/heapp/static/css/main.0d1f4d96.css.map",
+    "main.16007164.js.map": "/heapp/static/js/main.16007164.js.map",
+    "453.3042652e.chunk.js.map": "/heapp/static/js/453.3042652e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d1f4d96.css",
+    "static/js/main.16007164.js"
+  ]
+}
